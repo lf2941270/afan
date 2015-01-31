@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>用户中心_充值记录</title>
+    <link type="text/css" rel="stylesheet" href="4372/css/main.css">
+    <link type="text/css" rel="stylesheet" href="4372/js/jqueryui/skin/default/jqueryui.css">
+    <script type="text/javascript" src="4372/js/jquery.js"></script>
+    <script type="text/javascript" src="4372/js/jqueryui/jqueryui.js"></script>
+    <script type="text/javascript" src="4372/js/jqueryui/jquery.ui.datepicker-zh-CN.js"></script>
+    <script type="text/javascript" src="4372/js/myjs.js"></script>
+    <script type="text/javascript" src="../../js/My97DatePicker/WdatePicker.js"></script><link href="../../js/My97DatePicker/skin/WdatePicker.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript">
+        $(function () {
+            $("#date_begin,#date_end").datepicker({
+                showOn: "button",
+                buttonImage: "4372/images/calendar.gif",
+                buttonImageOnly: true,
+                dateFormat: "yy-mm-dd"
+            });
+        });
+        function gopage() {
+            if (document.getElementById("tpageindex").value != "") {
+                window.location.href = "?page=" + document.getElementById("tpageindex").value + "&start=" + document.getElementById("txtstart").value + "&end=" + document.getElementById("txtend").value + "&showcss=" + document.getElementById("hidshowcss").value;
+            }
+        }
+    </script>
+</head>
+
+<body style="">
+<form name="ctl00" method="post" action="4372user_chongzhi.html" id="ctl00">
+    <div>
+        <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTEzMzU3Mjg1NTkPZBYCAgEPZBYCAgUPFgIeCWlubmVyaHRtbGVkGAEFHl9fQ29udHJvbHNSZXF1aXJlUG9zdEJhY2tLZXlfXxYBBQxJbWFnZUJ1dHRvbjE=">
+    </div>
+
+
+
+    <div class="topbg2">
+        <div class="banner"></div>
+        <div class="daohangbg"></div>
+    </div>
+    <div class="bannerbody" style="height:185px;"></div>
+    <div class="daohang">
+        <a href="4372index.html" style="">网站首页</a>
+        <a href="4372user_center.html" style="">用户中心</a>
+        <a href="4372czzx.html" style="">充值中心</a>
+        <a href="4372yxlb.html" style="">游戏礼包</a>
+        <a href="4372new_list.html" style="">新闻公告</a>
+        <a href="http://bbs.ibaiyu.cn/">游戏论坛</a>
+    </div>
+
+    <div class="clear h20"></div>
+
+    <div class="pagebody3">
+        <ul>
+            <li class=""><a href="4372user_center.html" style=""><img src="4372/images/ii01.png" width="80" height="80"><br>中心首页</a></li>
+            <li><a href="../loginout.html"><img src="4372/images/ii02.png" width="80" height="80"><br>注销登录</a></li>
+            <li class=""><a href="../4372user_info.html"><img src="4372/images/ii03.png" width="80" height="80"><br>个人信息</a></li>
+            <li class=""><a href="../4372user_mima.html"><img src="4372/images/ii04.png" width="80" height="80"><br>密码修改</a></li>
+            <li class=""><a href="../4372user_xiaoxi.html"><img src="4372/images/ii05.png" width="80" height="80"><br>消息管理</a></li>
+            <li class=""><a href="../4372user_anquan.html"><img src="4372/images/ii06.png" width="80" height="80"><br>安全设置</a></li>
+            <li class=""><a href="4372czzx.html"><img src="4372/images/ii07.png" width="80" height="80"><br>帐户充值</a></li>
+            <li class="cur"><a href="../4372user_chongzhi.html"><img src="4372/images/ii08.png" width="80" height="80"><br>充值记录</a></li>
+
+        </ul>
+    </div>
+
+    <div style="margin:0 auto;width:1000px;height:20px;"><img src="4372/images/pagebody3_head.png" width="1000" height="20"></div>
+    <div class="pagebody" style="background:#ffffff url(4372/images/bodybg2.png);">
+        <div class="clear h30"></div>
+        <div style="margin:0 auto;width:900px;min-height:460px;">
+            <div class="l" style="margin-right:20px;line-height:22px;font-size:12px;color:#3a3a3a;">
+                <p>百娱币余额：0</p>
+                <p>如果您对帐户明细存在任何疑问，请联系在线客服或拨打客服热线：027-8393-7330咨询</p>
+            </div>
+            <div><a href="4372czzx.html"><img src="4372/images/but_cz.png" width="180" height="50"></a></div>
+            <div class="clear h10" style="border-bottom:1px solid #dbdbdb;"></div>
+            <div class="clear h20"></div>
+            <input name="txtstart" type="text" id="txtstart" class="Wdate" onfocus="WdatePicker()" readonly="readonly" value="2014-05-18">
+            <span>&nbsp;</span>
+            <input name="txtend" type="text" id="txtend" class="Wdate" onfocus="WdatePicker()" readonly="readonly" value="2014-06-18">
+            <input type="image" name="ImageButton1" id="ImageButton1" src="4372/images/but_search.png" style="height:26px;width:74px;border-width:0px;position:absolute;top:108px;left:380px;">
+
+
+            <div class="clear h20"></div>
+            <div class="kuang7" style="min-height:320px;width:900px;background-image:none;">
+                <div class="tabs">
+                    <div class="tab_head" checktype="click">
+                        <div style="background-image: url(4372/images/kuang7_tab_cur_bg.png);"><a href="4372user_chongzhi.html?showcss=1">消费明细</a></div>
+                        <div style=""><a href="4372user_chongzhi.html?showcss=2">充值明细</a></div>
+                    </div>
+                    <!--------------------------------------12月2日更改----------------------------------->
+                    <!--=======================================更改border颜色===================================-->
+                    <div class="tab_body" style="width:898px;height:290px;border:1px solid #2da1bc;border-top-width:0;">
+
+                        <div tag="1" style="display: block;">
+                            <div class="clear h20"></div>
+                            <a class="link2 xfsj" href="#">消费时间</a>
+                            <a class="link2 xfje" href="#">消费金额</a>
+                            <a class="link2 xfdx" href="#">充值游戏</a>
+                            <a class="link2 ddzt" href="#">订单状态</a>
+                            <div class="clear h5" style="margin:0 10px;border-bottom:1px dashed #dbdbdb;"></div>
+                            <!--填充数据-->
+
+
+                        </div>
+
+                        <div class="clear h15"></div>
+                        <div>
+                            <div id="PageContent" class="flickr right"></div>
+                        </div>
+                    </div>
+                    <!--------------------------------------12月2日更改----------------------------------->
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="clear h30"></div>
+        <div class="clear h15" style="background:url(4372/images/bodybg_bottom.png);"></div>
+    </div>
+    <div class="clear h10"></div>
+    <input name="hidshowcss" type="hidden" id="hidshowcss" value="1">
+
+  <div class="copyright">
+    <div class="box">
+      <div class="logo-bottom"></div>
+      <p><a href="../4372about.html">关于我们</a> | <a href="../4372about.html">联系我们</a> | <a
+          href="../4372about.html">商务合作</a> | <a href="../4372about.html">服务条款</a> | <a
+          href="../4372about.html">人才招聘</a> | <a href="../jzjk/1.html">家长监护</a></p>
+      <p>鄂ICP备12003812号 鄂ICP证B2-20120079 网络文化经营许可证 鄂网文【2012】0306-007号</p>
+      <p>Copyright ? 2012 All Rights Reserved</p>
+    </div>
+  </div>
+
+</form>
+
+
+</body></html>

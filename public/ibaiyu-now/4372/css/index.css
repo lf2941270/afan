@@ -1,0 +1,114 @@
+@-webkit-keyframes ewm
+{
+  0%   {-webkit-transform:scale(0.1,0.1)rotate(0deg);}
+  100% {-webkit-transform:scale(1,1)rotate(360deg);left: 7px;top: 7px;}
+}
+@-moz-keyframes ewm
+{
+  0%   {-moz-transform:scale(0.1,0.1)rotate(0deg);}
+  100% {-moz-transform:scale(1,1)rotate(360deg);left: 7px;top: 7px;}
+}
+@-ms-keyframes ewm
+{
+  0%   {-ms-transform:scale(0.1,0.1)rotate(0deg);}
+  100% {-ms-transform:scale(1,1)rotate(360deg);left: 7px;top: 7px;}
+}
+@-o-keyframes ewm
+{
+  0%   {-o-transform:scale(0.1,0.1)rotate(0deg);}
+  100% {-o-transform:scale(1,1)rotate(360deg);left: 7px;top: 7px;}
+}
+@keyframes ewm
+{
+  0%   {transform:scale(0.1,0.1)rotate(0deg);}
+  100% {transform:scale(1,1)rotate(360deg);left: 7px;top: 7px;}
+}
+.phone_game{position: relative;width: 998px;height:240px;margin-bottom:20px;border:1px solid #d1d1d1;}
+.phone_game .hd{position:relative;z-index:0;height:33px;background-image: url("../images/phone-game-sprites.png"); background-repeat:repeat-x; background-position: 0 -163px;border-bottom: 1px solid #d1d1d1; }
+.phone_game .hd .tab_hd{position:relative;z-index:2;width: 154px;height: 24px; padding: 5px 0 4px;cursor: pointer;float: left;}
+.phone_game .hd .tab_hd i{display:block;width: 22px;height: 24px;margin:0 6px 0 21px;float: left;background-image: url("../images/phone-game-sprites.png");cursor: pointer;}
+.phone_game .hd .tab_hd h3{display: block;font-family: "微软雅黑";font-size: 14px;color: #777777;cursor: pointer;}
+.phone_game .hd .tab_hd.cur h3{display: block;font-family: "微软雅黑";font-size: 14px;color: #ffffff;}
+.phone_game .hd .tab_hd i.android{background-position: 0 0;}
+.phone_game .hd .tab_hd.cur i.android{background-position: 0 -24px;}
+.phone_game .hd .tab_hd i.apple{background-position: 0 -48px;}
+.phone_game .hd .tab_hd.cur i.apple{background-position: 0 -72px;}
+.phone_game .tab_cur_bg{position: absolute;top:-1px;width: 155px;height: 40px;z-index: 1;background: url("../images/phone-game-sprites.png") 0 -96px;}
+.phone_game .bd .tab {
+  padding: 30px 32px 0;
+  height: 174px
+}
+.phone_game .bd .tab li.hovercur {
+  margin: 0 10px;
+  width: 135px;
+  display: inline;
+  float: left;
+  text-align: center
+}
+.phone_game .bd .tab li.hovercur .img {
+  width: 82px;
+  height: 82px;
+  overflow: hidden;
+  margin: 0 auto 10px;
+  overflow: hidden;
+  position: relative;
+  display: block;
+  border-radius: 15px;
+}
+.phone_game .bd .tab li.hovercur .img>img{
+  position: absolute;
+  left: 0;
+}
+.phone_game .bd .tab li.hovercur .ewm {
+  z-index: 2;
+  position: absolute;
+  display: none;
+  width: 67px;
+  height: 67px;
+}
+.phone_game .bd .tab li.hovercur .ewm.cur{
+  display: block;
+  left: 7px;
+  top: 7px;
+  -webkit-animation:ewm 0.4s;
+  -moz-animation:ewm 0.4s;
+  -ms-animation:ewm 0.4s;
+  -o-animation:ewm 0.4s;
+  animation:ewm 0.4s;
+}
+.phone_game .bd .tab li.hovercur .tt {
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  font-size: 14px
+}
+.phone_game .bd .tab li.hovercur .btn {
+  background: url(../images/phone-game-sprites.png) no-repeat -57px -137px;
+  width: 57px;
+  height: 25px;
+  display: block;
+  text-indent: -9999px;
+  overflow: hidden;
+  margin: 0 auto
+}
+.phone_game .bd .tab li.hovercur .btn:hover {
+  background-position: 0px -137px
+}
+.phone_game .bd .tab li.hovercur a{
+  color: #777777;
+}
+.phone_game .bd .tab li.hovercur:hover a{
+  color: #ff7a02;
+}
+.phone_game .bd li.more{
+  position: absolute;
+  right: 20px;
+  top: 9px;
+  font-size: 12px;
+}
+.phone_game .bd li.more a{
+  color: #777777;
+}
+.phone_game .bd li.more a:hover{
+  color: #ff7a02;
+}

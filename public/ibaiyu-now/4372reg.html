@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>会员注册</title>
+    <link type="text/css" rel="stylesheet" href="4372/css/main.css">
+    <script type="text/javascript" src="4372/js/jquery.js"></script>
+    <script type="text/javascript" src="4372/js/myjs.js"></script>
+
+    <script src="4372/js/4372formreg.js" type="text/javascript"></script>
+    <script src="user_js/function.js" type="text/javascript"></script>
+
+    <script type="text/ecmascript">
+    //=============================切换验证码======================================
+    function ToggleCode(obj, codeurl) {
+        $(obj).attr("src", codeurl + "?time=" + Math.random());
+    }
+    //=============================切换验证码======================================
+</script>
+    <style type="text/css">
+            /*显示JS提示框*/
+        #msgprint.pcent{ top:57%; right:45%; position:absolute; z-index:99; opacity:0.9; display:none; }
+        #msgprint.success,#msgprint.error,#msgprint.warning{ padding:5px 10px 5px 24px;  }
+        #msgprint.success{ border:1px solid #CCF9C1; color:#090; background:url(../images/msg_icon.gif) 5px 6px no-repeat #F1FEF2; }
+        #msgprint.error{ border:1px solid #F9F2B7; color:#F00; background:url(../images/msg_icon.gif) 5px -23px no-repeat #FDF8E8; }
+        #msgprint.warning{ border:1px solid #FAF4B8; color:#C52716; background:url(../images/msg_icon.gif) 5px -53px no-repeat #FEFDE9; }
+    </style>
+</head>
+
+<body style="">
+<div class="topbg4">
+    <div class="tbg"></div>
+    <div class="banner"></div>
+</div>
+
+<div class="bodytop">
+    <div class="l"><a href="4372index.html"><img src="4372/images/logo.png" width="250" height="128"></a></div>
+
+</div>
+<div class="kuang10">
+    <div class="title">注册游戏通行证</div>
+    <div class="clear h15"></div>
+    <form name="ctl00" method="post" action="4372reg.html" id="ctl00" style="width:225px;">
+        <div>
+            <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJOTc2Njg5MDE4ZBgBBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WAgUEY2t4eQUMSW1hZ2VCdXR0b24x">
+        </div>
+
+        <label><strong>设置帐号:</strong><input name="txtname" type="text" id="txtname" onblur="regname()" class="finput"> </label>
+        <div style="padding-left:60px;padding-bottom:5px;line-height:1.5;font-size:12px;">长度6～16位，由字母、数字组成，且只能以字母开头。</div>
+        <label><strong>输入密码:</strong><input name="txtpwd" type="password" id="txtpwd" onblur="regpwd()" class="finput"></label>
+        <div style="padding-left:60px;padding-bottom:5px;line-height:1.5;font-size:12px;">长度6～16位，由字母、数字组成，且只能以字母开头。</div>
+        <label><strong>确认密码:</strong><input name="txtagainpwd" type="password" id="txtagainpwd" onblur="regagainpwd()" class="finput"></label>
+        <div style="padding-left:60px;padding-bottom:5px;line-height:1.5;font-size:12px;">再一次输入密码进行确认，效验密码是否填写错误。</div>
+        <label><strong>真实姓名:</strong><input name="txtrealname" type="text" id="txtrealname" onblur="regrealname()" class="finput"></label>
+        <label><strong>身份证号:</strong><input name="txtcard" type="text" id="txtcard" onblur="regcard()" class="finput"></label>
+        <label><strong>邮　　箱:</strong><input name="txtemail" type="text" id="txtemail" onblur="regemail()" class="finput"></label>
+        <div style="padding-left:60px;padding-bottom:5px;line-height:1.5;font-size:12px;">为了账号安全，请确认邮箱真实可靠。</div>
+        <label><strong>验证码:</strong><input name="txtyzm" type="text" id="txtyzm" class="vcodeinput">
+            <img src="tools/verify_code.ashx" width="70" height="22" alt="点击切换验证码" title="点击切换验证码" style="margin-top: 2px; margin-left:68px; vertical-align: top; cursor: pointer;" onclick="ToggleCode(this, 'tools/verify_code.ashx');return false;">
+        </label>
+        <label class="fcheck l" style="margin-left:0;"> <input id="ckxy" type="checkbox" name="ckxy">&nbsp;我看过并同意<a href="about.html?id=4">《爱百娱用户服务条款》</a></label>
+        <div class="clear h10"></div>
+        <div style="text-align:center;"><a href="#">
+            <input type="image" name="ImageButton1" id="ImageButton1" src="4372/images/but_reg2.png" style="height:36px;width:131px;border-width:0px;"></a></div>
+        <div class="clear"></div>
+    </form>
+</div>
+<input name="txtbirth" type="hidden" id="txtbirth">
+<input name="hidsex" type="hidden" id="hidsex">
+<input name="hidsource" type="hidden" id="hidsource" value="http://www.ibaiyu.cn/4372index.html">
+<div class="clear h20"></div>
+
+<div class="copyright">
+  <div class="box">
+    <div class="logo-bottom"></div>
+    <p><a href="../4372about.html">关于我们</a> | <a href="../4372about.html">联系我们</a> | <a
+        href="../4372about.html">商务合作</a> | <a href="../4372about.html">服务条款</a> | <a
+        href="../4372about.html">人才招聘</a> | <a href="../jzjk/1.html">家长监护</a></p>
+    <p>鄂ICP备12003812号 鄂ICP证B2-20120079 网络文化经营许可证 鄂网文【2012】0306-007号</p>
+    <p>Copyright ? 2012 All Rights Reserved</p>
+  </div>
+</div>
+
+
+
+</body></html>

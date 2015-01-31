@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>百娱游戏--风云无双</title>
+    <link type="text/css" rel="stylesheet" href="4372/css/main.css">
+    <script type="text/javascript" src="4372/js/jquery.js"></script>
+    <script type="text/javascript">
+        $(window).ready(function () {
+            function content_resize() {
+                var _win_w = $(window).width();
+                var _win_h = $(window).height();
+
+                var _top_w = _win_w;
+                var _top_h = $(".gametop").height();
+                if (_top_w < 1000) _top_w = 1000;
+                $(".gametop").width(_top_w).height(_top_h);
+
+                var _left_h = _win_h - _top_h;
+                if (_left_h < 450) _left_h = 450;
+                $(document.body).width(_top_w).height(_win_h);
+                $(".gameleft").height(_left_h);
+
+                var _left_w = 185;
+                if ($(".split").attr("isshow") != "true") _left_w = 31;
+                $(".gamemain").width(_top_w - _left_w).height(_left_h);
+
+                set_split();
+            }
+
+            $(window).resize(content_resize);
+            content_resize();
+        });
+
+        var set_split = function () {
+            var split = $(".split");
+            split.css({ "position": "absolute", "top": "50%", "left": "154px" });
+        };
+
+        var left_showorhide = function () {
+            if ($(".split").attr("isshow") == "true") {
+                $(".gameleft").animate({ "left": "-154px" });
+                $(".split").attr("isshow", "false").removeClass("show").removeClass("hide").addClass("show");
+            }
+            else {
+                $(".gameleft").animate({  "left": "0" })
+                $(".split").attr("isshow", "true").removeClass("show").removeClass("hide").addClass("hide");
+            }
+            $(window).resize();
+            //event.cancelBubble = true;
+        };
+    </script>
+</head>
+
+<body style="width: 1425px; height: 426px;">
+<div class="gametop" style="width: 1425px; height: 37px;">
+    <div class="l"><img src="4372/images/logo_min.png" width="80" height="37"></div>
+    <div class="l" style="width:330px;line-height:37px;font-size:12px;">游戏平台：www.ibaiyu.cn【当前服务器：双线1服】</div>
+    <div class="l" style="font-size:12px;">
+        <a href="4372index.html" class="l icon_01" style="margin-right:20px;" target="_blank">官网</a>
+        <a href="4372new_list.html?newsid=4" class="l icon_02" style="margin-right:20px;" target="_blank">精彩活动</a>
+        <a href="4372new_list.html?newsid=3" class="l icon_03" style="margin-right:20px;" target="_blank">官方公告</a>
+        <a href="4372czzx.html?Game=54&amp;Server=1&amp;UserName=lf2941270" class="l icon_04" style="margin-right:20px;" target="_blank">充值</a>
+        <a href="javascript:;" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.ibaiyu.cn/');" class="l icon_05" style="margin-right:20px;">设为首页</a>
+        <a href="4372yxlb_show.html?gameid=54" class="l icon_06" style="margin-right:20px;" target="_blank">新手卡</a>
+    </div>
+</div>
+<div class="gameleft" style="height: 450px;">
+    <div>
+        <div class="clear h20"></div>
+        <div style="margin:0 auto;width:111px;height:22px;"><a href="4372new_list.html?newsid=4" class="linkhd" target="_blank">精彩活动</a></div>
+        <div class="clear h15"></div>
+        <div style="margin:0 auto;width:150px;">
+
+            <a href="4372news.html?id=7137" title="《风云无双》轮循活动之入魔大放送" class="link3" target="_blank"> 《风云无双》轮循活动...</a>
+
+
+            <a href="4372news.html?id=7127" title="《风云无双》轮循活动之坐骑大放送" class="link3" target="_blank"> 《风云无双》轮循活动...</a>
+
+
+            <a href="4372news.html?id=7126" title="《风云无双》财神宝藏活动再次来袭" class="link3" target="_blank"> 《风云无双》财神宝藏...</a>
+
+
+            <a href="4372news.html?id=7102" title="《风云无双》6月19日新增内容介绍" class="link3" target="_blank"> 《风云无双》6月19...</a>
+
+
+            <a href="4372news.html?id=7096" title="《风云无双》之幸运轮盘活动" class="link3" target="_blank"> 《风云无双》之幸运轮...</a>
+
+
+            <a href="4372news.html?id=7095" title="《风云无双》轮循活动之麒麟臂大放送" class="link3" target="_blank"> 《风云无双》轮循活动...</a>
+
+
+        </div>
+        <div class="clear h15"></div>
+        <div style="margin:0 auto;width:109px;height:27px;"><a href="4372gameserver_list.html?gameid=54" class="linkbg2" target="_blank">游戏资料</a></div>
+        <div class="clear h10"></div>
+        <div style="margin:0 auto;width:109px;height:27px;"><a href="http://bbs.ibaiyu.cn/" class="linkbg2" target="_blank">火爆论坛</a></div>
+        <div class="clear h10"></div>
+        <div style="margin:0 auto;width:109px;height:27px;"><a href="4372yxlb_show.html?gameid=54" class="linkbg2" target="_blank">领取礼包</a></div>
+        <div class="clear h10"></div>
+        <div style="margin:0 auto;width:109px;height:27px;"><a href="4372czzx.html?Game=54&amp;Server=1&amp;UserName=lf2941270" class="linkbg2" target="_blank">充值入口</a></div>
+        <div class="clear h10"></div>
+        <div style="margin:0 auto;width:109px;height:27px;"><a href="http://wpa.qq.com/msgrd?v=3&amp;uin=4008378088&amp;site=qq&amp;menu=yes" class="linkbg2" target="_blank">在线客服</a></div>
+        <div class="clear h10"></div>
+        <div align="center"><a href="http://wpa.qq.com/msgrd?v=3&amp;uin=4008378088&amp;site=qq&amp;menu=yes" target="_blank"><img src="4372/images/but_ly.png" width="77" height="22"></a></div>
+        <div class="clear h10"></div>
+        <div align="center"><img src="4372/images/pic_27.png" width="145" height="35"></div>
+        <div class="clear"></div>
+    </div>
+    <div class="split" isshow="true" onclick="left_showorhide();" style="position: absolute; top: 50%; left: 154px;"></div>
+</div>
+<div class="gamemain" style="width: 1240px; height: 450px;">
+    <iframe scrolling="yes" frameborder="0" src="http://s1.fyws.ibaiyu.cn/ibaiyu/login?qid=603558&amp;server_id=1&amp;time=1403146284&amp;sign=2a73727ff7178e4bbab37bc5fe6472f5&amp;isAdult=1" width="100%" height="100%"></iframe>
+</div>
+
+
+</body></html>

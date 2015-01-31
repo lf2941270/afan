@@ -1,0 +1,680 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!--此处要改动-->
+    <meta http-equiv="X-UA-Compatible" content="IE=9">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>游戏列表</title>
+    <link type="text/css" rel="stylesheet" href="4372/css/main.css">
+    <script type="text/javascript" src="4372/js/jquery.js"></script>
+    <script type="text/javascript" src="4372/js/myjs.js"></script>
+
+    <!--改变进度条的jquery插件-->
+    <script src="4372/js/jquery.mCustomScrollbar.concat.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="4372/css/jquery.mCustomScrollbar.css">
+    <!--改变进度条的jquery插件-->
+
+    <script type="text/javascript">
+        (function ($) {
+            $(document).ready(function () {
+                function isIE() {
+                    return navigator.appName.indexOf("Microsoft Internet Explorer") != -1 && document.all;
+                }
+
+                var isIe = isIE();
+//              这儿要改动
+//                if (!isIe) {
+                    $(".gg_content").mCustomScrollbar();
+                    $(".infolist").mCustomScrollbar({
+                        autoDraggerLength: true,
+                        advanced: {
+                            updateOnContentResize: true
+                        }
+                    });
+//                }
+
+                /*------------------------2014-4-25----改动游戏列表页及领取礼包页-------------------------------*/
+                $(".linklist2").find('a').each(function () {
+                    $(this).addClass('btn-' + $(this).index()).attr('title', $(this).html()).html('');
+                })
+
+            });
+        })(jQuery);
+    </script>
+
+    <style type="text/css">
+            /*拍拍网风格*/
+        .paginator {
+            font: 11px Arial, Helvetica, sans-serif;
+            padding: 10px 20px 10px 0;
+            margin: 0px;
+        }
+
+        .paginator a {
+            padding: 1px 6px;
+            border: solid 1px #ddd;
+            background: #fff;
+            text-decoration: none;
+            margin-right: 2px
+        }
+
+        .paginator a:visited {
+            padding: 1px 6px;
+            border: solid 1px #ddd;
+            background: #fff;
+            text-decoration: none;
+        }
+
+        .paginator .cpb {
+            padding: 1px 6px;
+            font-weight: bold;
+            font-size: 13px;
+            border: none
+        }
+
+        .paginator a:hover {
+            color: #fff;
+            background: #ffa501;
+            border-color: #ffa501;
+            text-decoration: none;
+        }
+
+        .paginator #Pager_btn {
+            left: 2px;
+            position: relative;
+            top: 5px;
+        }
+
+            /*图片位置调整*/
+    </style>
+</head>
+
+<body style="">
+
+
+<div class="topbg2">
+    <div class="banner"></div>
+    <div class="daohangbg"></div>
+</div>
+<div class="bannerbody" style="height:185px;"></div>
+<div class="daohang">
+    <a href="4372index.html" style="">网站首页</a>
+    <a href="4372user_center.html" style="">用户中心</a>
+    <a href="4372czzx.html" style="">充值中心</a>
+    <a href="4372yxlb.html" style="">游戏礼包</a>
+    <a href="4372new_list.html" style="">新闻公告</a>
+</div>
+
+
+<div class="pagebody" style="background:#ffffff url(4372/images/bodybg2.png);">
+<div class="clear h15"></div>
+<div style="margin:0 auto;width:970px;">
+<div class="kuang5 l">
+    <div class="clear h5"></div>
+    <div style="margin:0 auto;width:470px;height:290px;"><img src="upload/201404221133179670.jpg" width="470"
+                                                              height="290"></div>
+    <div class="clear h10"></div>
+    <div class="linklist1">
+        <a href="#">游戏类型/角色扮演</a>
+        <a href="#">游戏特征/武侠</a>
+        <a href="#">操作类型/即时战斗</a>
+        <a href="#">游戏画面/2D</a>
+        <a href="#">游戏状况/火爆</a>
+        <a href="#">收费模式/商城收费</a>
+    </div>
+    <div class="clear h10"></div>
+    <div class="linklist2">
+        <a href="http://www.ibaiyu.cn/4372news.html?id=5988" class="btn-0" title="开服活动"></a>
+        <a href="4372yxlb_show.html?gameid=55" class="btn-1" title="礼包领取"></a>
+        <a href="/upload/Dlq_Ahsj/百娱_ahsj.exe" class="btn-2" title="登录器下载"></a>
+        <a href="http://www.ibaiyu.cn/4372news.html?id=6035" class="btn-3" title="尊贵VIP"></a>
+    </div>
+    <div class="clear"></div>
+</div>
+<div class="kuang6 r">
+
+    <div class="gg_title">《暗黑世界》双线23服6月18日</div>
+    <div class="clear h10"></div>
+    <div class="gg_content">
+
+            <p>
+                <span style="font-size:14px;">　《暗黑世界》是百度游戏首款暗黑风格角色扮演类2D网络游戏。其在还原经典暗黑破坏神系列的同时，更在玩法上大胆创新，使得游戏整体更加注重玩家体验与画面感的结合。耳熟能详的剧情故事，经典玩法的回归，以及场面壮观宏大的攻城战，众多特色元素云集，势必将开创了一个前所未有的暗黑时代。</span>
+            </p>
+
+                <p align="center">
+                    <img style="width:495px;height:220px;" alt="" src="/upload/201406/18/201406180934540496.png"
+                         width="535" height="245"><br>
+                    &nbsp;
+                </p>
+
+                <p align="center">
+                    <span style="font-size:14px;"><span
+                            style="color:#e53333;"><strong>《暗黑世界》双线二十三</strong></span></span><span
+                        style="font-size:14px;"><span style="color:#e53333;"><strong>区
+                    开服时间：2014年6月18</strong></span><span style="color:#e53333;"><strong>日（周三</strong></span><span
+                        style="color:#e53333;"><strong>） 15</strong></span><span
+                        style="color:#e53333;"><strong>：00</strong></span></span>
+                </p>
+
+                <p align="center">
+                    <span style="font-size:14px;"></span>&nbsp;
+                </p>
+
+                <p align="center">
+                    <span style="font-size:14px;"></span>&nbsp;
+                </p>
+
+                <p align="center">
+                    <span style="font-size:14px;"></span>&nbsp;
+                </p>
+
+                <p align="center">
+                    <span style="font-size:14px;"></span><a
+                        href="http://www.ibaiyu.cn/4372gameserver_list.html?gameid=55" target="_blank"><img alt=""
+                                                                                                            src="/upload/201403/14/201403141050568865.jpg"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="http://www.ibaiyu.cn/4372news.html?id=6056" target="_blank"><img alt=""
+                                                                                              src="/upload/201403/14/201403141051057850.jpg"></a>&nbsp;
+                </p>
+
+                <p align="center">
+                    <span style="font-size:14px;"></span>&nbsp;
+                </p>
+
+                <p align="center">
+                    <span style="font-size:14px;"></span>&nbsp;
+                </p><a href="4372news.html?id=7119" style="color:#ff6600;">[详情]</a>
+
+
+    </div>
+
+
+    <div class="clear h10"></div>
+    <div class="list">
+        <ul>
+
+            <li><a href="4372news.html?id=7119">【官方公告】《暗黑世界》双线23服6月18日15：00火爆开启</a></li>
+
+            <li><a href="4372news.html?id=7108">【官方公告】《暗黑世界》6月18日更新维护公告</a></li>
+
+            <li><a href="4372news.html?id=7042">【官方公告】《暗黑世界》双线22服6月13日15：00火爆开启</a></li>
+
+            <li><a href="4372news.html?id=7011">【官方公告】《暗黑世界》6月12日维护公告</a></li>
+
+            <li><a href="4372news.html?id=7003">【官方公告】《暗黑世界》双线21服6月11日15：00火爆开启</a></li>
+
+            <li><a href="4372news.html?id=6888">【官方公告】《暗黑世界》6月6日临时维护公告</a></li>
+
+            <li><a href="4372news.html?id=6883">【官方公告】《暗黑世界》双线20服6月6日15：00火爆开启</a></li>
+
+
+        </ul>
+    </div>
+</div>
+<div class="clear h10"></div>
+<div class="kuang7 tabs">
+<div class="tab_head">
+    <div tag="1" class="cur">游戏服务器</div>
+    <div tag="2" class="">游戏资料</div>
+    <div tag="3" class="">游戏画面</div>
+    <div tag="4" class="">客服中心</div>
+</div>
+<div class="tab_body">
+<div tag="1" style="display: none;">
+    <form name="ctl00" method="post" action="4372gameserver_list.html?gameid=55" id="ctl00">
+        <div>
+            <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+            <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+            <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE"
+                   value="/wEPDwUJNTYwNzk2NDYwD2QWCAIBDxYCHgtfIUl0ZW1Db3VudAIBFgJmD2QWAmYPFQMm44CK5pqX6buR5LiW55WM44CL5Y+M57q/MjPmnI025pyIMTjml6WpDjxwPg0KCTxzcGFuIHN0eWxlPSJmb250LXNpemU6MTRweDsiPuOAgOOAiuaal+m7keS4lueVjOOAi+aYr+eZvuW6pua4uOaIj+mmluasvuaal+m7kemjjuagvOinkuiJsuaJrua8lOexuzJE572R57uc5ri45oiP44CC5YW25Zyo6L+Y5Y6f57uP5YW45pqX6buR56C05Z2P56We57O75YiX55qE5ZCM5pe277yM5pu05Zyo546p5rOV5LiK5aSn6IOG5Yib5paw77yM5L2/5b6X5ri45oiP5pW05L2T5pu05Yqg5rOo6YeN546p5a625L2T6aqM5LiO55S76Z2i5oSf55qE57uT5ZCI44CC6ICz54af6IO96K+m55qE5Ymn5oOF5pWF5LqL77yM57uP5YW4546p5rOV55qE5Zue5b2S77yM5Lul5Y+K5Zy66Z2i5aOu6KeC5a6P5aSn55qE5pS75Z+O5oiY77yM5LyX5aSa54m56Imy5YWD57Sg5LqR6ZuG77yM5Yq/5b+F5bCG5byA5Yib5LqG5LiA5Liq5YmN5omA5pyq5pyJ55qE5pqX6buR5pe25Luj44CCPC9zcGFuPiANCjwvcD4NCjxwIGFsaWduPSJjZW50ZXIiPg0KCTxpbWcgc3R5bGU9IndpZHRoOjQ5NXB4O2hlaWdodDoyMjBweDsiIGFsdD0iIiBzcmM9Ii91cGxvYWQvMjAxNDA2LzE4LzIwMTQwNjE4MDkzNDU0MDQ5Ni5wbmciIHdpZHRoPSI1MzUiIGhlaWdodD0iMjQ1IiAvPjxiciAvPg0KJm5ic3A7DQo8L3A+DQo8cCBhbGlnbj0iY2VudGVyIj4NCgk8c3BhbiBzdHlsZT0iZm9udC1zaXplOjE0cHg7Ij48c3BhbiBzdHlsZT0iY29sb3I6I2U1MzMzMzsiPjxzdHJvbmc+44CK5pqX6buR5LiW55WM44CL5Y+M57q/5LqM5Y2B5LiJPC9zdHJvbmc+PC9zcGFuPjwvc3Bhbj48c3BhbiBzdHlsZT0iZm9udC1zaXplOjE0cHg7Ij48c3BhbiBzdHlsZT0iY29sb3I6I2U1MzMzMzsiPjxzdHJvbmc+5Yy6IOW8gOacjeaXtumXtO+8mjIwMTTlubQ25pyIMTg8L3N0cm9uZz48L3NwYW4+PHNwYW4gc3R5bGU9ImNvbG9yOiNlNTMzMzM7Ij48c3Ryb25nPuaXpe+8iOWRqOS4iTwvc3Ryb25nPjwvc3Bhbj48c3BhbiBzdHlsZT0iY29sb3I6I2U1MzMzMzsiPjxzdHJvbmc+77yJIDE1PC9zdHJvbmc+PC9zcGFuPjxzcGFuIHN0eWxlPSJjb2xvcjojZTUzMzMzOyI+PHN0cm9uZz7vvJowMDwvc3Ryb25nPjwvc3Bhbj48L3NwYW4+IA0KPC9wPg0KPHAgYWxpZ249ImNlbnRlciI+DQoJPHNwYW4gc3R5bGU9ImZvbnQtc2l6ZToxNHB4OyI+PC9zcGFuPiZuYnNwOw0KPC9wPg0KPHAgYWxpZ249ImNlbnRlciI+DQoJPHNwYW4gc3R5bGU9ImZvbnQtc2l6ZToxNHB4OyI+PC9zcGFuPiZuYnNwOw0KPC9wPg0KPHAgYWxpZ249ImNlbnRlciI+DQoJPHNwYW4gc3R5bGU9ImZvbnQtc2l6ZToxNHB4OyI+PC9zcGFuPiZuYnNwOw0KPC9wPg0KPHAgYWxpZ249ImNlbnRlciI+DQoJPHNwYW4gc3R5bGU9ImZvbnQtc2l6ZToxNHB4OyI+PC9zcGFuPjxhIGhyZWY9Imh0dHA6Ly93d3cuaWJhaXl1LmNuLzQzNzJnYW1lc2VydmVyX2xpc3QuYXNweD9nYW1laWQ9NTUiIHRhcmdldD0iX2JsYW5rIj48aW1nIGFsdD0iIiBzcmM9Ii91cGxvYWQvMjAxNDAzLzE0LzIwMTQwMzE0MTA1MDU2ODg2NS5qcGciIC8+PC9hPiZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyA8YSBocmVmPSJodHRwOi8vd3d3LmliYWl5dS5jbi80MzcybmV3cy5hc3B4P2lkPTYwNTYiIHRhcmdldD0iX2JsYW5rIj48aW1nIGFsdD0iIiBzcmM9Ii91cGxvYWQvMjAxNDAzLzE0LzIwMTQwMzE0MTA1MTA1Nzg1MC5qcGciIC8+PC9hPiZuYnNwOw0KPC9wPg0KPHAgYWxpZ249ImNlbnRlciI+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">
+        </div>
+
+        <script type="text/javascript">
+            //<![CDATA[
+            var theForm = document.forms['ctl00'];
+            if (!theForm) {
+                theForm = document.ctl00;
+            }
+            function __doPostBack(eventTarget, eventArgument) {
+                if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+                    theForm.__EVENTTARGET.value = eventTarget;
+                    theForm.__EVENTARGUMENT.value = eventArgument;
+                    theForm.submit();
+                }
+            }
+            //]]>
+        </script>
+
+
+        <script src="/WebResource.axd?d=kQc1VuJvtqorzyt9G-gM6MUDA52MW_qr_ygozd6VQfqknTT2i0t4oW4L1cQkYHirAW6PmQBp6rQ6C_B8airKD7rQJibhgSroOtgwwLm0ZmA1&amp;t=635382652083370642"
+                type="text/javascript"></script>
+
+
+        <script src="/ScriptResource.axd?d=PztRmYryJGOWR9xsjhD-yaPMxP4Ui1NgiowfgIQLLYP8dnQhlhvcHE1n4K9m0qvyr70S8RP0uegLg0JZ2LJnJbsU85pnSijC3f73_D8Jp0twp3-jlBohDERZiZeV3HWH_CrZ4JkLSyqsC6a3r4sqlDtJXbNDjuIedsAeAUUFF-v_xBK44qGKHuKBIrLgFNHI0&amp;t=ffffffff940d030f"
+                type="text/javascript"></script>
+        <script type="text/javascript">
+            //<![CDATA[
+            if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax 客户端框架未能加载。');
+            //]]>
+        </script>
+
+        <script src="/ScriptResource.axd?d=C-FLPWGAK6jCo_xt-0NfoKWWLrHu-EHGpwZ8QDMkNwqS3LZ-RI8sQoiVbXOyoeeLU7W9Krgz4DGUqSgR5Od3f_Z56yApubGsuezf06Cf9Rvwe8J1uITvLC33a9mXAdMz1H5ct4rNTnzv1I4gLS87Jt9K7DZZiaG8WNIZQL8Kqi6Obh_DhOrOgl599IEf4jeK0&amp;t=ffffffff940d030f"
+                type="text/javascript"></script>
+        <script type="text/javascript">
+            //<![CDATA[
+            Sys.WebForms.PageRequestManager._initialize('scriptManager', 'ctl00', ['tUpdatePanel1', ''], ['Pager', ''], [], 90, '');
+            //]]>
+        </script>
+
+        <div id="UpdatePanel1">
+
+            <div class="clear h15"></div>
+            <div class="serverlist">
+                <ul class="clearfix">
+
+                    <li><a href="4372game.html?gv=1228&amp;gk=55" target="_blank">
+                        <div class="name" style="cursor:pointer;">双线1服</div>
+                        <div class="state1">火爆</div>
+                    </a></li>
+
+                    <li><a href="4372game.html?gv=1247&amp;gk=55" target="_blank">
+                        <div class="name" style="cursor:pointer;">双线2服</div>
+                        <div class="state1">火爆</div>
+                    </a></li>
+
+                    <li><a href="4372game.html?gv=1255&amp;gk=55" target="_blank">
+                        <div class="name" style="cursor:pointer;">双线3服</div>
+                        <div class="state2">流畅</div>
+                    </a></li>
+
+                    <li><a href="4372game.html?gv=1259&amp;gk=55" target="_blank">
+                        <div class="name" style="cursor:pointer;">双线4服</div>
+                        <div class="state2">流畅</div>
+                    </a></li>
+
+                    <li><a href="4372game.html?gv=1260&amp;gk=55" target="_blank">
+                        <div class="name" style="cursor:pointer;">双线5服</div>
+                        <div class="state2">流畅</div>
+                    </a></li>
+
+                    <li><a href="4372game.html?gv=1268&amp;gk=55" target="_blank">
+                        <div class="name" style="cursor:pointer;">双线6服</div>
+                        <div class="state2">流畅</div>
+                    </a></li>
+
+                    <li><a href="4372game.html?gv=1288&amp;gk=55" target="_blank">
+                        <div class="name" style="cursor:pointer;">双线7服</div>
+                        <div class="state2">流畅</div>
+                    </a></li>
+
+                    <li><a href="4372game.html?gv=1298&amp;gk=55" target="_blank">
+                        <div class="name" style="cursor:pointer;">双线8服</div>
+                        <div class="state2">流畅</div>
+                    </a></li>
+
+                    <li><a href="4372game.html?gv=1299&amp;gk=55" target="_blank">
+                        <div class="name" style="cursor:pointer;">双线9服</div>
+                        <div class="state2">流畅</div>
+                    </a></li>
+
+                    <li><a href="4372game.html?gv=1302&amp;gk=55" target="_blank">
+                        <div class="name" style="cursor:pointer;">双线10服</div>
+                        <div class="state2">流畅</div>
+                    </a></li>
+
+                    <li><a href="4372game.html?gv=1307&amp;gk=55" target="_blank">
+                        <div class="name" style="cursor:pointer;">双线11服</div>
+                        <div class="state2">流畅</div>
+                    </a></li>
+
+                    <li><a href="4372game.html?gv=1311&amp;gk=55" target="_blank">
+                        <div class="name" style="cursor:pointer;">双线12服</div>
+                        <div class="state2">流畅</div>
+                    </a></li>
+
+                    <li><a href="4372game.html?gv=1315&amp;gk=55" target="_blank">
+                        <div class="name" style="cursor:pointer;">双线13服</div>
+                        <div class="state2">流畅</div>
+                    </a></li>
+
+                    <li><a href="4372game.html?gv=1317&amp;gk=55" target="_blank">
+                        <div class="name" style="cursor:pointer;">双线14服</div>
+                        <div class="state2">流畅</div>
+                    </a></li>
+
+                    <li><a href="4372game.html?gv=1322&amp;gk=55" target="_blank">
+                        <div class="name" style="cursor:pointer;">双线15服</div>
+                        <div class="state2">流畅</div>
+                    </a></li>
+
+                    <li><a href="4372game.html?gv=1325&amp;gk=55" target="_blank">
+                        <div class="name" style="cursor:pointer;">双线16服</div>
+                        <div class="state2">流畅</div>
+                    </a></li>
+
+                    <li><a href="4372game.html?gv=1329&amp;gk=55" target="_blank">
+                        <div class="name" style="cursor:pointer;">双线17服</div>
+                        <div class="state2">流畅</div>
+                    </a></li>
+
+                    <li><a href="4372game.html?gv=1332&amp;gk=55" target="_blank">
+                        <div class="name" style="cursor:pointer;">双线18服</div>
+                        <div class="state2">流畅</div>
+                    </a></li>
+
+                    <li><a href="4372game.html?gv=1344&amp;gk=55" target="_blank">
+                        <div class="name" style="cursor:pointer;">双线19服</div>
+                        <div class="state2">流畅</div>
+                    </a></li>
+
+                    <li><a href="4372game.html?gv=1349&amp;gk=55" target="_blank">
+                        <div class="name" style="cursor:pointer;">双线20服</div>
+                        <div class="state2">流畅</div>
+                    </a></li>
+
+
+                </ul>
+
+                <div style="text-align:center;">
+
+                    <!-- AspNetPager 7.4.2 Copyright:2003-2012 Webdiyer (www.webdiyer.com) -->
+                    <script type="text/javascript"
+                            src="/WebResource.axd?d=R0EnSpzip8fhXKKDK_foE4RQxqjP6ogUwkpiSnt0EIazP4uGZqJd0STnCfrX2pSy6HxIYO8s6xhnsiHGgqGqisfncPbrIbEEYG_kdQaU7OkkaDojYoMDxppXvFLcU8Yy0&amp;t=635211472944215272"></script>
+                    <div id="Pager" class="paginator">
+                        <a disabled="disabled" style="margin-right:5px;">首页</a><a disabled="disabled"
+                                                                                  style="margin-right:5px;">上一页</a><span
+                            class="cpb" style="margin-right:5px;">1</span><a href="javascript:__doPostBack('Pager','2')"
+                                                                             style="margin-right:5px;">2</a><a
+                            href="javascript:__doPostBack('Pager','2')" style="margin-right:5px;">下一页</a><a
+                            href="javascript:__doPostBack('Pager','2')"
+                            style="margin-right:5px;">尾页</a>&nbsp;&nbsp;<input type="text" value="1" name="Pager_input"
+                                                                               id="Pager_input"
+                                                                               onkeydown="ANP_keydown(event,'Pager_btn');"
+                                                                               onkeyup="ANP_keyup('Pager_input');"
+                                                                               style="width:30px;"><input type="image"
+                                                                                                          src="../images/go.gif"
+                                                                                                          name="Pager"
+                                                                                                          id="Pager_btn"
+                                                                                                          onclick="if(ANP_checkInput('Pager_input',2,'页索引超出范围！','页索引不是有效的数值！')){__doPostBack('Pager','')} else{return false}">
+                    </div>
+                    <!-- AspNetPager 7.4.2 Copyright:2003-2012 Webdiyer (www.webdiyer.com) -->
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </form>
+</div>
+<div tag="2" style="display: none;">
+    <div class="clear h30"></div>
+    <div class="infolist">
+
+        <ul>
+
+                    <li><a href="4372news.html?id=6089">帝江</a></li>
+
+                    <li><a href="4372news.html?id=6036">最强公会战</a></li>
+
+                    <li><a href="4372news.html?id=6035">VIP系统介绍</a></li>
+
+                    <li><a href="4372news.html?id=6016">组队系统</a></li>
+
+                    <li><a href="4372news.html?id=6015">装备分解</a></li>
+
+                    <li><a href="4372news.html?id=6014">职业特点</a></li>
+
+                    <li><a href="4372news.html?id=6013">职业介绍</a></li>
+
+                    <li><a href="4372news.html?id=6012">游戏界面</a></li>
+
+                    <li><a href="4372news.html?id=6011">游戏背景</a></li>
+
+                    <li><a href="4372news.html?id=6010">勋章系统</a></li>
+
+                    <li><a href="4372news.html?id=6009">悬赏任务</a></li>
+
+                    <li><a href="4372news.html?id=6008">套装</a></li>
+
+                    <li><a href="4372news.html?id=6007">清楚邪恶</a></li>
+
+                    <li><a href="4372news.html?id=6006">魔王讨伐系统</a></li>
+
+                    <li><a href="4372news.html?id=6004">聊天系统</a></li>
+
+                    <li><a href="4372news.html?id=6003">角色属性</a></li>
+
+                    <li><a href="4372news.html?id=6002">技能系统2.20</a></li>
+
+                    <li><a href="4372news.html?id=6001">技能系统</a></li>
+
+                    <li><a href="4372news.html?id=6000">基本操作</a></li>
+
+                    <li><a href="4372news.html?id=5999">好友系统</a></li>
+
+                    <li><a href="4372news.html?id=5998">公会系统</a></li>
+
+                    <li><a href="4372news.html?id=5997">恶魔城系统</a></li>
+
+                    <li><a href="4372news.html?id=5996">单人剧情副本</a></li>
+
+                    <li><a href="4372news.html?id=5995">翅膀系统</a></li>
+
+                    <li><a href="4372news.html?id=5994">成就系统</a></li>
+
+                    <li><a href="4372news.html?id=5993">背包仓库</a></li>
+
+                    <li><a href="4372news.html?id=5992">宝石功能介绍</a></li>
+
+                    <li><a href="4372news.html?id=5991">宝藏系统</a></li>
+
+                    <li><a href="4372news.html?id=5988">不删档开服活动</a></li>
+
+                    <li><a href="4372news.html?id=5987">最强城主战</a></li>
+
+                    <li><a href="4372news.html?id=5950">永恒战场</a></li>
+
+                    <li><a href="4372news.html?id=5949">挖矿</a></li>
+
+                    <li><a href="4372news.html?id=5948">排行榜</a></li>
+
+                    <li><a href="4372news.html?id=5946">炼狱争霸</a></li>
+
+                    <li><a href="4372news.html?id=5919">经验秘境</a></li>
+
+                    <li><a href="4372news.html?id=5918">寄售</a></li>
+
+                    <li><a href="4372news.html?id=5917">赌博</a></li>
+
+                    <li><a href="4372news.html?id=5916">PVP介绍</a></li>
+
+                    <li><a href="4372news.html?id=5915">金矿攻略</a></li>
+
+                    <li><a href="4372news.html?id=5914">金币副本攻略</a></li>
+
+                    <li><a href="4372news.html?id=5910">黄金挂机点攻略</a></li>
+
+                    <li><a href="4372news.html?id=5909">怪物擂台攻略</a></li>
+
+                    <li><a href="4372news.html?id=5904">公会图腾战攻略</a></li>
+
+                    <li><a href="4372news.html?id=5903">图腾系统</a></li>
+
+                    <li><a href="4372news.html?id=5902">挑战BOSS</a></li>
+
+                    <li><a href="4372news.html?id=5901">强化系统</a></li>
+
+                    <li><a href="4372news.html?id=5900">每日活跃</a></li>
+
+                    <li><a href="4372news.html?id=5899">福利</a></li>
+
+                    <li><a href="4372news.html?id=5874">恶魔降临</a></li>
+
+
+                </ul>
+
+    </div>
+</div>
+<div tag="3" style="display: none;">
+    <div class="clear h30"></div>
+    <div class="gamepiclist">
+        <ul>
+            <li><a href="#"><img src="upload/201401141721394123.png" width="220" height="180"></a></li>
+            <li><a href="#"><img src="upload/201401141721571483.png" width="220" height="180"></a></li>
+            <li><a href="#"><img src="upload/201401151038205370.png" width="220" height="180"></a></li>
+            <li><a href="#"><img src="upload/201401151038259326.png" width="220" height="180"></a></li>
+        </ul>
+    </div>
+</div>
+<div tag="4" style="display: block;">
+    <div class="kf_nav">
+        <a class="btn" href="http://wpa.qq.com/msgrd?v=3&amp;uin=4008378088&amp;site=qq&amp;menu=yes"
+           target="_blank"></a>
+    </div>
+</div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="clear h15" style="background:url(4372/images/bodybg_bottom.png);"></div>
+</div>
+<div class="clear h10"></div>
+<div class="copyright">
+  <div class="box">
+    <div class="logo-bottom"></div>
+    <p><a href="../4372about.html">关于我们</a> | <a href="../4372about.html">联系我们</a> | <a
+        href="../4372about.html">商务合作</a> | <a href="../4372about.html">服务条款</a> | <a
+        href="../4372about.html">人才招聘</a> | <a href="../jzjk/1.html">家长监护</a></p>
+    <p>鄂ICP备12003812号 鄂ICP证B2-20120079 网络文化经营许可证 鄂网文【2012】0306-007号</p>
+    <p>Copyright ? 2012 All Rights Reserved</p>
+  </div>
+</div>
+<script>
+  $(function(){
+    $(".kuang7").addClass("server-kuang7 clearfix").removeClass("kuang7")
+    $(".server-kuang7 .tab_head div").addClass(function(){
+      return 'tab tab-'+$(this).attr("tag");
+    }).text("");
+    $(".server-kuang7 .tab_body").find("div[tag]").addClass(function(){
+      return 'tab tab-'+$(this).attr("tag");
+    });
+    $(".serverlist li a").each(function(){
+      $(this).find("div").eq(1).addClass("state").text("");
+      $(this).append('<i class="rec r2"></i>');
+    });
+    function MoveLeft(){
+      var content,options;
+      var frameTime,//每帧间隔
+          speed,//移动一张图片的时间
+          pauseTime,//移动一张图片后暂停的时间
+          width,//图片宽度（包含边距）
+          stepWidth;//每一步移动的距离
+      var time1;
+      this.init=function(me,o){
+        content=me;
+        $content=$(content);
+        options=o;
+        frameTime=options.frameTime||20;
+        speed=options.speed||4000;
+        pauseTime=options.pauseTime||500;
+        width=options.width||230;
+        stepWidth=width/speed*frameTime;
+        setup();
+        return this;
+      }
+      function moveStep(){
+        $content.css("left",Math.round($content.position().left-stepWidth)+"px");
+        move();
+        if(-$content.position().left>=width){
+          $content.append($content.find("li").eq(1).clone());
+          $content.find("li").eq(0).remove();
+          $content.css("left",(width+$content.position().left)+"px");
+        }else{
+
+        }
+      }
+      function setup(){
+        $content.append($content.find("li").eq(0).clone());
+        $content.hover(function(){
+          clearTimeout(time1);
+        },function(){
+          move();
+        })
+        move();
+      }
+
+      function move(){
+        time1=setTimeout(function(){
+          moveStep();
+        },frameTime);
+      }
+    }
+    $.prototype.moveLeft=function(o){
+      var ops=o||{}
+      new MoveLeft().init(this[0],ops);
+    }
+    $(".gamepiclist ul").css({"left":'0px',"width":"2000px"}).moveLeft();
+
+    //将游戏图片做成页面背景
+    var src=$(".kuang5").find("img").eq(0).attr("src");
+    var bgDiv='<div id="bgDiv"><img src="'+src+'" width="'+$('body').width()+'" height="'+($('body').height()-200)+'"/></div>';
+    $('body').append(bgDiv)
+
+    $(".pagebody").css({
+      "background":""
+    }).find(".clear").css({
+          "background":""
+        });
+    $.prototype.setBg=function(color,opacity){
+      var bg=$('<div style="position: absolute;width: 100%;height: 100%;left: 0;top: 0;z-index: -1;"></div>');
+      bg.css({
+        "background":color,
+        "opacity":opacity,
+        "filter":"alpha(opacity="+opacity*100+")"
+      })
+      $(this).css("position","relative").append(bg);
+    }
+    $(".kuang6 ").setBg("#000000",0.25);
+    $(".kuang6 .list").setBg("#000000",0.12);
+  });
+
+</script>
+<style>
+  #bgDiv{
+    position:absolute;
+    top:200px;
+    left:0;
+    z-index:-2;
+    -webkit-filter:blur(15px);
+    -moz-filter:blur(15px);
+    -o-filter:blur(15px);
+    opacity:0.7;
+    filter:alpha(opacity=70);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Blur(pixelradius=15)" !important;
+
+  }
+  body{
+    background:#444;
+  }
+  .kuang6{
+  }
+  .kuang6 .list,.kuang6 .gg_title{
+    background: none;
+  }
+  .kuang6 .gg_content{
+    color: #e0e0e0;
+  }
+  .kuang6 .list ul li a{
+    color: #e0e0e0 ;
+  }
+  .kuang6 .list ul li a:hover{
+    color: #ff6600 ;
+  }
+  .copyright,.copyright a{
+    color: #e0e0e0;
+  }
+</style>
+
+</body>
+</html>

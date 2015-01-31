@@ -1,0 +1,342 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>新闻中心</title>
+    <link type="text/css" rel="stylesheet" href="4372/css/main.css">
+    <script type="text/javascript" src="4372/js/jquery.js"></script>
+    <script type="text/javascript" src="4372/js/myjs.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".kuang11 .list dd:nth-child(even)").addClass("even");
+        });
+
+        function gopage() {
+            if (document.getElementById("tpageindex").value != "") {
+                window.location.href = "?page=" + document.getElementById("tpageindex").value + "&newsid=" + document.getElementById("hidnewsid").value;
+            }
+        }
+    </script>
+</head>
+
+<body style="">
+<form name="ctl00" method="post" action="4372new_list.html" id="ctl00">
+<div>
+    <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+    <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+    <input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="">
+    <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+    //<![CDATA[
+    var theForm = document.forms['ctl00'];
+    if (!theForm) {
+        theForm = document.ctl00;
+    }
+    function __doPostBack(eventTarget, eventArgument) {
+        if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+            theForm.__EVENTTARGET.value = eventTarget;
+            theForm.__EVENTARGUMENT.value = eventArgument;
+            theForm.submit();
+        }
+    }
+    //]]>
+</script>
+
+
+
+
+<div class="topbg2">
+    <div class="banner"></div>
+    <div class="daohangbg"></div>
+</div>
+<div class="bannerbody" style="height:185px;"></div>
+<div class="daohang">
+    <a href="4372index.html" style="">网站首页</a>
+    <a href="4372user_center.html" style="">用户中心</a>
+    <a href="4372czzx.html" style="">充值中心</a>
+    <a href="4372yxlb.html" style="">游戏礼包</a>
+    <a href="4372new_list.html" style="background-image: url(4372/images/daohang_linkbg.png);color:#EB551E;">新闻公告</a>
+    <a href="http://bbs.ibaiyu.cn/">游戏论坛</a>
+</div>
+
+<div class="pagebody">
+<div class="clear h20"></div>
+<div class="pagemain">
+    <div class="kuang11">
+        <div class="tab_head">
+            <div style="position:absolute;"><img src="4372/images/kuang11_title_icon.png" width="38" height="30"></div>
+            <div class="clear" style="height:6px;"></div>
+            <div class="t1" style="background-image: url(4372/images/t_cur2.png);">
+                <a href="4372new_list.html?newsid=3&amp;gameid="><img src="4372/images/t3.png" width="160" height="25"></a>
+            </div>
+            <div class="t2" style="">
+                <a href="4372new_list.html?newsid=4&amp;gameid="><img src="4372/images/t4.png" width="160" height="25"></a>
+            </div>
+            <div style="margin-top:4px;">
+                <select name="DropDownList1" onchange="javascript:setTimeout('__doPostBack(\'DropDownList1\',\'\')', 0)" id="DropDownList1">
+                    <option selected="selected" value="0">全部游戏</option>
+                    <option value="58">黑暗之光</option>
+                    <option value="57">大斗魂</option>
+                    <option value="56">卧龙OL</option>
+                    <option value="55">暗黑世界</option>
+                    <option value="54">风云无双</option>
+                    <option value="53">暗黑修仙</option>
+                    <option value="52">骑士战歌</option>
+                    <option value="51">暗黑屠龙</option>
+                    <option value="50">江湖问剑</option>
+                    <option value="49">大闹天宫</option>
+                    <option value="48">奇迹来了</option>
+                    <option value="47">神创天下</option>
+                    <option value="46">魔龙诀</option>
+                    <option value="45">暗黑西游</option>
+                    <option value="44">最无极</option>
+                    <option value="43">女神联盟</option>
+                    <option value="42">热血战纪</option>
+                    <option value="41">太古遮天</option>
+                    <option value="40">武易传奇</option>
+                    <option value="39">枪魂</option>
+                    <option value="38">一剑轩辕</option>
+                    <option value="37">横扫天下</option>
+                    <option value="36">神武九天</option>
+                    <option value="35">忍者疾风</option>
+                    <option value="34">武尊</option>
+                    <option value="33">盗魂传</option>
+                    <option value="31">绝代双骄</option>
+                    <option value="27">天界</option>
+                    <option value="26">楚汉传奇</option>
+                    <option value="25">烈焰</option>
+                    <option value="2">神曲</option>
+                    <option value="32">古剑奇侠</option>
+                    <option value="29">武斗乾坤</option>
+                    <option value="28">冒险契约</option>
+                    <option value="24">烈火战神</option>
+                    <option value="21">霸域</option>
+                    <option value="23">九龙朝</option>
+                    <option value="22">战三国</option>
+                    <option value="20">天尊传奇</option>
+                    <option value="19">斗破乾坤</option>
+                    <option value="18">三国魂</option>
+                    <option value="17">街机三国</option>
+                    <option value="1">仙落凡尘</option>
+                    <option value="4">热血海贼</option>
+                    <option value="6">大侠传</option>
+
+                </select>
+            </div>
+        </div>
+        <div class="tab_body">
+            <div class="mid">
+                <div class="clear h20"></div>
+                <!--============开始新闻============-->
+
+                <div class="list">
+                    <dl>
+                        <dt><span class="lb">类别</span><span class="wz">文章标题</span><span class="rq">发布日期</span></dt>
+
+                        <dd class="even">
+                            <span class="lb">官方公告</span><a class="wz" href="4372news.html?id=7138">《枪魂》6月19日全服版本更新公告</a><span class="rq">2014-06-19</span>
+                        </dd>
+
+                        <dd>
+                            <span class="lb">官方公告</span><a class="wz" href="4372news.html?id=7133">《风云无双》6月19日更新维护公告</a><span class="rq">2014-06-18</span>
+                        </dd>
+
+                        <dd class="even">
+                            <span class="lb">官方公告</span><a class="wz" href="4372news.html?id=7121">《风云无双》6月18日双线37服15点盛大开启</a><span class="rq">2014-06-18</span>
+                        </dd>
+
+                        <dd>
+                            <span class="lb">官方公告</span><a class="wz" href="4372news.html?id=7120">《大闹天宫OL》6月18日15:00 双线47服,火爆开启</a><span class="rq">2014-06-18</span>
+                        </dd>
+
+                        <dd class="even">
+                            <span class="lb">官方公告</span><a class="wz" href="4372news.html?id=7119">《暗黑世界》双线23服6月18日15：00火爆开启</a><span class="rq">2014-06-18</span>
+                        </dd>
+
+                        <dd>
+                            <span class="lb">官方公告</span><a class="wz" href="4372news.html?id=7118">《武易传奇》双线216区6月18日14：00震撼开启</a><span class="rq">2014-06-18</span>
+                        </dd>
+
+                        <dd class="even">
+                            <span class="lb">官方公告</span><a class="wz" href="4372news.html?id=7115">《太古遮天》6月18日更新公告</a><span class="rq">2014-06-18</span>
+                        </dd>
+
+                        <dd>
+                            <span class="lb">官方公告</span><a class="wz" href="4372news.html?id=7112">《大闹天宫OL》6月18日版本更新公告</a><span class="rq">2014-06-17</span>
+                        </dd>
+
+                        <dd class="even">
+                            <span class="lb">官方公告</span><a class="wz" href="4372news.html?id=7110">《风云无双》6月18日合服公告</a><span class="rq">2014-06-17</span>
+                        </dd>
+
+                        <dd>
+                            <span class="lb">官方公告</span><a class="wz" href="4372news.html?id=7109">《街机三国》6月18日更新维护公告</a><span class="rq">2014-06-17</span>
+                        </dd>
+
+                        <dd class="even">
+                            <span class="lb">官方公告</span><a class="wz" href="4372news.html?id=7108">《暗黑世界》6月18日更新维护公告</a><span class="rq">2014-06-17</span>
+                        </dd>
+
+                        <dd>
+                            <span class="lb">官方公告</span><a class="wz" href="4372news.html?id=7098">《风云无双》6月17日合区充值公告</a><span class="rq">2014-06-17</span>
+                        </dd>
+
+
+
+                    </dl>
+                </div>
+                <!--=============结束新闻=============-->
+                <div class="clear h20"></div>
+                <div class="flickr right"><span class="disabled">首页</span><span class="disabled">上一页</span><span class="current">1</span><a href="4372new_list.html?newsid=3&amp;page=2">2</a><a href="4372new_list.html?newsid=3&amp;page=3">3</a><a href="4372new_list.html?newsid=3&amp;page=4">4</a><span>...</span><a href="4372new_list.html?newsid=3&amp;page=203">203</a><a href="4372new_list.html?newsid=3&amp;page=2">下一页</a><a href="4372new_list.html?newsid=3&amp;page=203">末页</a><input id="tpageindex" style="width:30px;" type="text" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')">&nbsp;<a href="javascript:;" onclick="gopage()">GO</a></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+    <div class="clear h20"></div>
+</div>
+<div class="pageright">
+    <div class="kuang1 r">
+        <div class="title"></div>
+        <div class="list">
+            <ul>
+                <!--==============================此处需要更改背景颜色=================================-->
+                <li style="height:26px;line-height:26px;background:#f9ba90;">
+                    <div class="col1">日期</div>
+                    <div class="col2">时间</div>
+                    <div class="col3">游戏名称</div>
+                    <div class="col4">服数</div>
+                </li>
+                <div class="clear h5"></div>
+
+                <li>
+                    <div class="col1">06-18</div>
+                    <div class="col2">15:00</div>
+                    <div class="col3"><a href="4372game.html?gv=1371&amp;gk=49" class="a2" target="_blank" title="大闹天宫">大闹天宫</a></div>
+                    <div class="col4"> <a href="4372game.html?gv=1371&amp;gk=49" class="a1" target="_blank">47区</a></div>
+                </li>
+
+
+                <li>
+                    <div class="col1">06-18</div>
+                    <div class="col2">15:00</div>
+                    <div class="col3"><a href="4372game.html?gv=1372&amp;gk=54" class="a2" target="_blank" title="风云无双">风云无双</a></div>
+                    <div class="col4"> <a href="4372game.html?gv=1372&amp;gk=54" class="a1" target="_blank">37区</a></div>
+                </li>
+
+
+                <li>
+                    <div class="col1">06-18</div>
+                    <div class="col2">15:00</div>
+                    <div class="col3"><a href="4372game.html?gv=1373&amp;gk=55" class="a2" target="_blank" title="暗黑世界">暗黑世界</a></div>
+                    <div class="col4"> <a href="4372game.html?gv=1373&amp;gk=55" class="a1" target="_blank">23区</a></div>
+                </li>
+
+
+                <li>
+                    <div class="col1">06-18</div>
+                    <div class="col2">14:00</div>
+                    <div class="col3"><a href="4372game.html?gv=1370&amp;gk=40" class="a2" target="_blank" title="武易传奇">武易传奇</a></div>
+                    <div class="col4"> <a href="4372game.html?gv=1370&amp;gk=40" class="a1" target="_blank">216区</a></div>
+                </li>
+
+
+                <li>
+                    <div class="col1">06-16</div>
+                    <div class="col2">14:00</div>
+                    <div class="col3"><a href="4372game.html?gv=1369&amp;gk=54" class="a2" target="_blank" title="风云无双">风云无双</a></div>
+                    <div class="col4"> <a href="4372game.html?gv=1369&amp;gk=54" class="a1" target="_blank">36区</a></div>
+                </li>
+
+
+                <li>
+                    <div class="col1">06-15</div>
+                    <div class="col2">15:00</div>
+                    <div class="col3"><a href="4372game.html?gv=1368&amp;gk=49" class="a2" target="_blank" title="大闹天宫">大闹天宫</a></div>
+                    <div class="col4"> <a href="4372game.html?gv=1368&amp;gk=49" class="a1" target="_blank">46区</a></div>
+                </li>
+
+
+                <li>
+                    <div class="col1">06-15</div>
+                    <div class="col2">14:00</div>
+                    <div class="col3"><a href="4372game.html?gv=1367&amp;gk=40" class="a2" target="_blank" title="武易传奇">武易传奇</a></div>
+                    <div class="col4"> <a href="4372game.html?gv=1367&amp;gk=40" class="a1" target="_blank">215区</a></div>
+                </li>
+
+
+                <li>
+                    <div class="col1">06-14</div>
+                    <div class="col2">14:00</div>
+                    <div class="col3"><a href="4372game.html?gv=1366&amp;gk=2" class="a2" target="_blank" title="神曲">神曲</a></div>
+                    <div class="col4"> <a href="4372game.html?gv=1366&amp;gk=2" class="a1" target="_blank">111区</a></div>
+                </li>
+
+
+                <li>
+                    <div class="col1">06-13</div>
+                    <div class="col2">16:00</div>
+                    <div class="col3"><a href="4372game.html?gv=1361&amp;gk=4" class="a2" target="_blank" title="热血海贼">热血海贼</a></div>
+                    <div class="col4"> <a href="4372game.html?gv=1361&amp;gk=4" class="a1" target="_blank">203区</a></div>
+                </li>
+
+
+                <li>
+                    <div class="col1">06-13</div>
+                    <div class="col2">15:00</div>
+                    <div class="col3"><a href="4372game.html?gv=1363&amp;gk=49" class="a2" target="_blank" title="大闹天宫">大闹天宫</a></div>
+                    <div class="col4"> <a href="4372game.html?gv=1363&amp;gk=49" class="a1" target="_blank">45区</a></div>
+                </li>
+
+
+            </ul>
+        </div>
+        <div class="bottom"></div>
+    </div>
+    <div class="clear h15"></div>
+    <div class="kuang3 r">
+        <div class="top"></div>
+        <div class="mid">
+            <div class="clear h15"></div>
+            <table width="216" class="center_align">
+                <tbody><tr>
+                    <td height="37" align="center"><a href="4372reg.html"><img src="4372/images/but_01.png" width="95" height="26"></a></td>
+                    <td height="37" align="center"><a href="4372czzx.html"><img src="4372/images/but_02.png" width="95" height="26"></a></td>
+                </tr>
+                <tr>
+                    <td height="37" align="center"><a href="4372find_type.html"><img src="4372/images/but_03.png" width="95" height="26"></a></td>
+                    <td height="37" align="center"><a href="4372user_info.html"><img src="4372/images/but_04.png" width="95" height="26"></a></td>
+                </tr>
+                <tr>
+                    <td height="37" align="center"><a href="4372find_type.html"><img src="4372/images/but_05.png" width="95" height="26"></a></td>
+                    <td height="37" align="center"><a href="http://wpa.qq.com/msgrd?v=3&amp;uin=4008378088&amp;site=qq&amp;menu=yes"><img src="4372/images/but_06.png" width="95" height="26"></a></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="bottom"></div>
+    </div>
+    <div class="clear h20"></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="clear h10"></div>
+<input name="hidnewsid" type="hidden" id="hidnewsid" value="3">
+
+<div class="copyright">
+  <div class="box">
+    <div class="logo-bottom"></div>
+    <p><a href="../4372about.html">关于我们</a> | <a href="../4372about.html">联系我们</a> | <a
+        href="../4372about.html">商务合作</a> | <a href="../4372about.html">服务条款</a> | <a
+        href="../4372about.html">人才招聘</a> | <a href="../jzjk/1.html">家长监护</a></p>
+    <p>鄂ICP备12003812号 鄂ICP证B2-20120079 网络文化经营许可证 鄂网文【2012】0306-007号</p>
+    <p>Copyright ? 2012 All Rights Reserved</p>
+  </div>
+</div>
+
+</form>
+
+
+</body></html>

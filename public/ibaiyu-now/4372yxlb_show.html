@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>领取游戏礼包</title>
+    <link type="text/css" rel="stylesheet" href="4372/css/main.css">
+    <script type="text/javascript" src="4372/js/jquery.js"></script>
+    <script type="text/javascript" src="4372/js/myjs.js"></script>
+    <script type="text/javascript" src="4372/js/popup.js"></script>
+
+    <!-- 复制到剪切板Js-->
+    <script src="js/ZeroClipboard.js" type="text/javascript"></script>
+    <!-- 复制到剪切板Js-->
+    <script type="text/javascript">
+        function init() {
+            c(clipLoad());
+        }
+        function clipLoad() {
+            var clip = new ZeroClipboard.Client();
+            clip.setHandCursor(true);
+            clip.addEventListener('load', function () { });
+            return clip;
+        }
+        function c(clip) {
+            clip.addEventListener('mouseOver', function (client) { clip.setText(document.getElementById("lblno").innerHTML); });
+            clip.addEventListener('complete', function () { alert("复制成功！"); });
+            clip.glue('f1');
+        }
+    </script>
+
+    <!--4月28日添加，更改 .kuang5 的样式-->
+    <script type="text/javascript">
+        $(function () {
+            $(".kuang5 .infos .info").each(function () {
+                $(this).addClass('info' + ($(this).index() + 1));
+            });
+            $("#ImageButton1").attr('src', '4372/images/lingqu.png').hover(function () {
+                $(this).attr('src', '4372/images/lingquhover.png');
+            }, function () {
+                $(this).attr('src', '4372/images/lingqu.png');
+            });
+        });
+    </script>
+</head>
+
+<body onload="init()" style="">
+
+
+<div class="topbg2">
+    <div class="banner"></div>
+    <div class="daohangbg"></div>
+</div>
+<div class="bannerbody" style="height:185px;"></div>
+<div class="daohang">
+    <a href="4372index.html" style="">网站首页</a>
+    <a href="4372user_center.html" style="">用户中心</a>
+    <a href="4372czzx.html" style="">充值中心</a>
+    <a href="4372yxlb.html" style="background-image: url(4372/images/daohang_linkbg.png);color:#EB551E;">游戏礼包</a>
+    <a href="4372new_list.html" style="">新闻公告</a>
+    <a href="http://bbs.ibaiyu.cn/">游戏论坛</a>
+</div>
+
+<div class="pagebody" style="background:#ffffff url(4372/images/bodybg2.png);">
+    <form name="ctl00" method="post" action="4372yxlb_show.html?gameid=55" id="ctl00">
+        <div>
+            <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTE2NDQ0NTc1NA9kFgICAw9kFgJmDxBkEBUYEuivt+mAieaLqeacjeWKoeWZqArlj4znur8x5pyNCuWPjOe6vzLmnI0K5Y+M57q/M+acjQrlj4znur805pyNCuWPjOe6vzXmnI0K5Y+M57q/NuacjQrlj4znur835pyNCuWPjOe6vzjmnI0K5Y+M57q/OeacjQvlj4znur8xMOacjQvlj4znur8xMeacjQvlj4znur8xMuacjQvlj4znur8xM+acjQvlj4znur8xNOacjQvlj4znur8xNeacjQvlj4znur8xNuacjQvlj4znur8xN+acjQvlj4znur8xOOacjQvlj4znur8xOeacjQvlj4znur8yMOacjQvlj4znur8yMeacjQvlj4znur8yMuacjQvlj4znur8yM+acjRUYAAJzMQJzMgJzMwJzNAJzNQJzNgJzNwJzOAJzOQNzMTADczExA3MxMgNzMTMDczE0A3MxNQNzMTYDczE3A3MxOANzMTkDczIwA3MyMQNzMjIDczIzFCsDGGdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2RkGAEFHl9fQ29udHJvbHNSZXF1aXJlUG9zdEJhY2tLZXlfXxYBBQxJbWFnZUJ1dHRvbjE=">
+        </div>
+
+        <div class="clear"></div>
+        <div style="margin:0 auto;width:970px;">
+            <div class="clear h20"></div>
+            <div class="kuang5 l">
+                <div class="clear h5"></div>
+                <div style="margin:0 auto;width:470px;height:290px;"><img src="/upload/201404/22/201404221133179670.jpg" width="470" height="290"></div>
+                <div class="clear h10"></div>
+                <div class="infos">
+                    <div class="info info1"><span><b>礼包名称：</b></span><span>暗黑世界新手卡</span></div>
+                    <div class="info info2"><span><b>领取条件：</b></span><span>免费</span></div>
+                    <div class="info info3"><span><b>剩余数量：</b></span><span> 18802</span></div>
+                    <div class="info info4"><span><b>服务器：</b></span><span><select name="ddlservers" id="ddlservers">
+                        <option value="">请选择服务器</option>
+                        <option value="s1">双线1服</option>
+                        <option value="s2">双线2服</option>
+                        <option value="s3">双线3服</option>
+                        <option value="s4">双线4服</option>
+                        <option value="s5">双线5服</option>
+                        <option value="s6">双线6服</option>
+                        <option value="s7">双线7服</option>
+                        <option value="s8">双线8服</option>
+                        <option value="s9">双线9服</option>
+                        <option value="s10">双线10服</option>
+                        <option value="s11">双线11服</option>
+                        <option value="s12">双线12服</option>
+                        <option value="s13">双线13服</option>
+                        <option value="s14">双线14服</option>
+                        <option value="s15">双线15服</option>
+                        <option value="s16">双线16服</option>
+                        <option value="s17">双线17服</option>
+                        <option value="s18">双线18服</option>
+                        <option value="s19">双线19服</option>
+                        <option value="s20">双线20服</option>
+                        <option value="s21">双线21服</option>
+                        <option value="s22">双线22服</option>
+                        <option value="s23">双线23服</option>
+
+                    </select></span></div>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear h10"></div>
+                <div class="linklist2">
+
+                    <input type="image" name="ImageButton1" id="ImageButton1" src="4372/images/lingqu.png" style="border-width:0px;">
+
+                </div>
+
+                <div class="clear"></div>
+            </div>
+            <div class="kuang12 r">
+                <div class="title">
+                    <div class="text">礼包领取及使用说明</div>
+                </div>
+                <div style="padding:20px 30px;">
+                    <p>
+                        <span style="font-size:14px;">1、进入爱百娱</span><span style="font-size:14px;">《暗黑世界》，</span><a href="http://www.ibaiyu.cn/4372gameserver_list.html?gameid=55" target="_blank"><span style="font-size:14px;">注册并登陆账号&gt;&gt;</span><br>
+                    </a>
+                    </p>
+                    <p>
+                        <span style="font-size:14px;"></span>&nbsp;
+                    </p>
+                    <p>
+                        <span style="font-size:14px;">2、登录游戏后→“每日福利”活动面板中“礼包兑换”使用礼包码，即可获取相应奖励</span>
+                    </p>
+                    <p>
+                        <span style="font-size:14px;"></span>&nbsp;
+                    </p>
+                    <p>
+                        <span style="font-size:14px;">道具奖励</span>
+                    </p>
+                    <span style="font-size:14px;">神之泪x1、经验卷轴x1、声望x10000、1级攻击宝石x3、金币x50万</span>
+                    <p>
+                        &nbsp;
+                    </p>
+
+
+                </div>
+            </div>
+            <div class="clear h5"></div>
+        </div>
+        <div class="clear h15" style="background:url(4372/images/bodybg_bottom.png);"></div>
+    </form>
+</div>
+<div class="clear h10"></div>
+<div class="copyright">
+  <div class="box">
+    <div class="logo-bottom"></div>
+    <p><a href="../4372about.html">关于我们</a> | <a href="../4372about.html">联系我们</a> | <a
+        href="../4372about.html">商务合作</a> | <a href="../4372about.html">服务条款</a> | <a
+        href="../4372about.html">人才招聘</a> | <a href="../jzjk/1.html">家长监护</a></p>
+    <p>鄂ICP备12003812号 鄂ICP证B2-20120079 网络文化经营许可证 鄂网文【2012】0306-007号</p>
+    <p>Copyright ? 2012 All Rights Reserved</p>
+  </div>
+</div>
+
+
+
+</body></html>

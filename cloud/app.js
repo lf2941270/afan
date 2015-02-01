@@ -1,7 +1,7 @@
 // 在 Cloud code 里初始化 Express 框架
 var express = require('express');
 var app = express();
-var routes = require('./routes');
+var routes = require('./routes.js');
 var avosExpressCookieSession = require('avos-express-cookie-session');
 
 // App 全局配置

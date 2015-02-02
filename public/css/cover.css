@@ -28,6 +28,7 @@ html,
 body {
   height: 100%;
   background-color: #333;
+  font-family:"Microsoft Yahei",simsun,arial,sans-serif;
 }
 body {
   color: #fff;
@@ -160,4 +161,73 @@ body {
   .cover-container {
     width: 700px;
   }
+}
+
+
+.modal-title{
+  font-size: 18px;
+  color: #ff4840;
+}
+.modal-dialog, .modal-dialog a{
+  font-size: 14px;
+  text-align: left;
+  text-shadow: none;
+  color: #ff4840;
+}
+.form-signin{
+  width: 80%;
+  margin: 20px auto;
+  padding:15px;
+}
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+  cursor: auto;
+  z-index: 0;
+}
+.form-signin .form-error{
+  color: #e54e53;
+  margin: 4px 0 0;
+  line-height: 18px;
+}
+.form-signin input[type="text"] {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-top: -1px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+.form-signin input:focus{
+  z-index: 1;
+}
+.form-signin .btn{
+  margin: 15px auto 8px;
+  cursor: pointer;
+  background-color: #f4614d;
+  border: none;
+}
+.form-signin .btn:hover {
+  text-decoration: none;
+  color: #fff;
+  background: #ff4840
+}
+.form-signin .btn.disable{
+  background: #EF847F;
+}
+.btn-primary{
+  background-color: #f4614d;
+  border: none;
+}
+.btn-primary:hover{
+  background-color: #ff4840;
+}
+.btn-primary[disable=true]{
+  background: #B0B0B0;
 }

@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.2/css/bootstrap.min.css">
 
   <!-- 可选的Bootstrap主题文件（一般不用引入） -->
-  <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+  <!--<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">-->
 
   <link href="css/cover.css" rel="stylesheet">
 </head>
@@ -28,6 +28,7 @@
               <li class="active"><a href="#">Home</a></li>
               <li><a href="#">Features</a></li>
               <li><a href="#">Contact</a></li>
+              <li><a href="#" id="signin">Sign in</a></li>
             </ul>
           </nav>
         </div>
@@ -53,6 +54,34 @@
 
 </div>
 
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel"><span class="glyphicon glyphicon-user"></span> 账号登录</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+
+          <form class="form-signin" role="form">
+            <input name="username" type="text" class="form-control" placeholder="请输入用户名">
+            <input name="password" type="password" class="form-control" placeholder="请输入密码">
+            <p class="form-error"></p>
+            <button class="form-control btn btn-lg btn-primary btn-block" type="submit">登 录</button>
+
+            <a href="http://www.ibaiyu.cn/4372find_type.aspx" target="_blank">忘记密码</a>
+          </form>
+
+        </div>
+      </div>
+      <!--     <div class="modal-footer">
+             &lt;!&ndash;<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>&ndash;&gt;
+      </div>-->
+    </div>
+  </div>
+</div>
 <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
 <script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
 
@@ -70,6 +99,7 @@
     }
   });
 </script>
+<script src="./js/client.js"></script>
 </body>
 </html>
 

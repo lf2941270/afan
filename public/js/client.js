@@ -56,30 +56,28 @@ function login(redirectUrl){
 		}
 		$(this).clearFormError();
 		subBtn.disableBtn().text("登录中...");
-		var formData = $(this).serialize();
-		var options = $.extend(ajaxConfig.login, {
-			data: formData
-		});
-		try{
-			$.ajax(options).success(function(data){
-				if(typeof data === 'string'){
-					data = JSON.parse(data);
-				}
-				if(data.error === 1 && data.msg){
-					$(".form-signin").showFormError(data.msg);
-				}else{
-					redirectUrl && redirectUrl !== 'javascript: void' ? (location.href = redirectUrl) : location.reload();
-				}
-			}).fail(function(xhr, err){
-//							console.error(err);
-					}).complete(function(){
-						subBtn.ableBtn().text("登录");
-					});
-		}catch (e){
-//				console.log('catch e:');
-//				console.error(e);
-		}
+		subBtn.ableBtn().text("登录");
+
 		return false;
+	});
+}
+function signUp(){
+	var user = new AV.User();
+	user.set("username", $('[name=username]').val());
+	user.set("password", $('[name=password]').val());
+	user.set("email", $('[name=email]').val());
+
+// other fields can be set just like with AV.Object
+//	user.set("phone", "415-392-0202");
+
+	user.signUp(null, {
+		success: function(user) {
+			// Hooray! Let them use the app now.
+		},
+		error: function(user, error) {
+			// Show the error message somewhere and let the user try again.
+			alert("Error: " + error.code + " " + error.message);
+		}
 	});
 }
 $(function(){

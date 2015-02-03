@@ -166,12 +166,25 @@ body {
 
 .modal-title{
   font-size: 18px;
-  color: #ff4840;
+
 }
 .modal-dialog, .modal-dialog a{
   font-size: 14px;
   text-align: left;
   text-shadow: none;
+  color: #ff4840;
+}
+#loginModal .modal-header{
+  border-bottom: none;
+}
+#loginModal .modal-header .nav.nav-tabs{
+  margin: 0 -15px;
+  padding-left: 15px;
+}
+#loginModal .modal-header .nav.nav-tabs a{
+  color: #999;
+}
+#loginModal .modal-header .nav.nav-tabs .active a{
   color: #ff4840;
 }
 .form-signin{

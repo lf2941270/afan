@@ -55,30 +55,52 @@
 </div>
 
 <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
+  <div class="modal-dialog" role="tabpanel">
     <div class="modal-content">
+      <!-- Nav tabs -->
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title" id="myModalLabel"><span class="glyphicon glyphicon-user"></span> 账号登录</h4>
+        <ul class="nav nav-tabs" role="tablist">
+
+          <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">
+            <h4 class="modal-title"><span class="glyphicon glyphicon-user"></span> 账号登录</h4>
+          </a></li>
+          <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">
+            <h4 class="modal-title"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> 账号注册</h4>
+          </a></li>
+        </ul>
       </div>
-      <div class="modal-body">
-        <div class="row">
 
-          <form class="form-signin" role="form">
-            <input name="username" type="text" class="form-control" placeholder="请输入用户名">
-            <input name="password" type="password" class="form-control" placeholder="请输入密码">
-            <p class="form-error"></p>
-            <button class="form-control btn btn-lg btn-primary btn-block" type="submit">登 录</button>
+      <div  class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="home">
 
-            <a href="http://www.ibaiyu.cn/4372find_type.aspx" target="_blank">忘记密码</a>
-          </form>
+
+            <div class="modal-body">
+              <div class="row">
+                <form class="form-signin" role="form">
+                  <input name="username" type="text" class="form-control" placeholder="请输入用户名">
+                  <input name="password" type="password" class="form-control" placeholder="请输入密码">
+                  <p class="form-error"></p>
+                  <button class="form-control btn btn-lg btn-primary btn-block" type="submit">登 录</button>
+                  <a href="http://www.ibaiyu.cn/4372find_type.aspx" target="_blank">忘记密码</a>
+                </form>
+              </div>
+            </div>
 
         </div>
+        <div role="tabpanel" class="tab-pane " id="profile" >
+          <div class="modal-body">
+            <div class="row">
+              <form class="form-signin" role="form">
+                <input name="username" type="text" class="form-control" placeholder="请输入用户名">
+                <input name="password" type="password" class="form-control" placeholder="请输入密码">
+                <p class="form-error"></p>
+                <button class="form-control btn btn-lg btn-primary btn-block" type="submit">立即注册</button>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
-      <!--     <div class="modal-footer">
-             &lt;!&ndash;<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>&ndash;&gt;
-      </div>-->
     </div>
   </div>
 </div>
@@ -91,13 +113,13 @@
 <script src="https://leancloud.cn/scripts/lib/av-0.4.7.min.js"></script>
 <script>
   AV.initialize("bnk6dyj5n00l2egig0ezm7d08dx1j48qaa69jam0w4hy5w7w", "g5w9j1lwvky8gvn1sh56r9k2hm8rg03076x1v23karfqzboa");
-  var TestObject = AV.Object.extend("TestObject");
+  /*var TestObject = AV.Object.extend("TestObject");
   var testObject = new TestObject();
   testObject.save({foo: "bar"}, {
     success: function(object) {
       alert("LeanCloud works!");
     }
-  });
+  });*/
 </script>
 <script src="./js/client.js"></script>
 </body>

@@ -188,12 +188,12 @@ body {
 #loginModal .modal-header .nav.nav-tabs .active a{
   color: #ff4840;
 }
-.form-signin{
+.form-sign{
   width: 80%;
   margin: 20px auto;
   padding:15px;
 }
-.form-signin .form-control {
+.form-sign .form-control {
   position: relative;
   height: auto;
   -webkit-box-sizing: border-box;
@@ -204,35 +204,35 @@ body {
   cursor: auto;
   z-index: 0;
 }
-.form-signin .form-error{
+.form-sign .form-error{
   color: #e54e53;
   margin: 4px 0 0;
   line-height: 18px;
 }
-.form-signin input[type="text"] {
+.form-sign input[type="text"] {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
-.form-signin input[type="password"] {
+.form-sign input[type="password"] {
   margin-top: -1px;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
 }
-.form-signin input:focus{
+.form-sign input:focus{
   z-index: 1;
 }
-.form-signin .btn{
+.form-sign .btn{
   margin: 15px auto 8px;
   cursor: pointer;
   background-color: #f4614d;
   border: none;
 }
-.form-signin .btn:hover {
+.form-sign .btn:hover {
   text-decoration: none;
   color: #fff;
   background: #ff4840
 }
-.form-signin .btn.disable{
+.form-sign .btn.disable{
   background: #EF847F;
 }
 .btn-primary{

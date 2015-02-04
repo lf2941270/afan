@@ -28,11 +28,12 @@ html,
 body {
   height: 100%;
   background-color: #333;
+  color: #fff;
+  text-align: center;
   font-family:"Microsoft Yahei",simsun,arial,sans-serif;
 }
 body {
-  color: #fff;
-  text-align: center;
+
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
 

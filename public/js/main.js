@@ -23,6 +23,9 @@ requirejs.config({
 		},
 		'underscore': {
 			exports: '_'
+		},
+		'bootstrap': {
+			deps: ['jquery']
 		}
 	}
 });

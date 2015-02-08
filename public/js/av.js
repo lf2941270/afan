@@ -9634,6 +9634,6 @@ define(["jquery", "underscore"],function(jQuery, _) {
 			return query;
 		};
 	}(this));
-	return this.AV
+	return this.AV;
 });
 

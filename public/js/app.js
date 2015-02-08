@@ -4,4 +4,8 @@ require( ["av"], function(AV) {
 });
 require(["bootstrap"]);
 
+require(['./view/helloView'], function(AppView){
+	new AppView;
+})
+
 

@@ -10,7 +10,8 @@ requirejs.config({
 		"underscore": "https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min",
 		"backbone": "https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone-min",
 		"bootstrap": "http://cdn.bootcss.com/bootstrap/3.3.2/js/bootstrap.min",
-		"avoscloud": "https://leancloud.cn/scripts/lib/av-0.4.7.min"
+		"avoscloud": "https://leancloud.cn/scripts/lib/av-0.4.7.min",
+		"ejs": "./ejs"
 	},
 	shim: {
 		'backbone': {
